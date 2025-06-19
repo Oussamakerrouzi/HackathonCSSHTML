@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .gallery-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .gallery-table td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+            vertical-align: top;
+        }
+        
+        .artist-cell {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .artwork-cell {
+            background-color: #fafafa;
+            transition: transform 0.3s ease;
+        }
+        
+        .artwork-cell:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .artist-image, .artwork-image {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: 3px solid #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+        
+        .artist-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .artwork-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin: 8px 0;
+        }
+        
+        .artwork-description {
+            font-size: 14px;
+            color: #666;
+            margin: 8px 0;
+            line-height: 1.4;
+        }
+        
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-top: 10px;
+        }
+        
+        .artist-specialty {
+            font-size: 14px;
+            font-style: italic;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: #333; margin-bottom: 30px;">Art Gallery Collection</h1>
+    
+    <table class="gallery-table">
+        <!-- First Row - Artists -->
+        <tr>
+            <td class="artist-cell">
+                <img src="desert-dewler-person-profile-picture-front-f.jpg" alt="desert man" class="artist-image">
+                <div class="artist-name">Si Said</div>
+                <div class="artist-specialty">Desert Joy</div>
+            </td>
+            <td class="artist-cell">
+                <img src="3d-ape-wearing-baseball-hat.jpg" alt="Draconius Magnus" class="artist-image">
+                <div class="artist-name">The Ape</div>
+                <div class="artist-specialty">Street Wisdom</div>
+            </td>
+            <td class="artist-cell">
+                <img src="3d-dragon-in-tuxido.jpg" alt="Leo Majesty" class="artist-image">
+                <div class="artist-name">The Dragon</div>
+                <div class="artist-specialty">The Dragon's Gala</div>
+            </td>
+            <td class="artist-cell">
+                <img src="3d-lion-in-tshirt.jpg" alt="Amara Sahel" class="artist-image">
+                <div class="artist-name">The Lion</div>
+                <div class="artist-specialty">Noble Beast</div>
+            </td>
+        </tr>
+        
+        <!-- Second Row - Artworks -->
+        <tr>
+            <td class="artwork-cell">
+                <img src="desert.jpg" alt="Abstract Waves" class="artwork-image">
+                <div class="artwork-title">Alpha</div>
+                <div class="artwork-description">Ancient ruins and travelers beneath a cosmic starry sky in a vast desert</div>
+                <div class="price">$50</div>
+            </td>
+            <td class="artwork-cell">
+                <img src="ape hat 02.jpg" alt="Urban Dreams" class="artwork-image">
+                <div class="artwork-title">Alpha</div>
+                <div class="artwork-description">A contemplative primate portrait featuring safari-style attire with botanical patterns</div>
+                <div class="price">$50</div>
+            </td>
+            <td class="artwork-cell">
+                <img src="dragon 5.jpg" alt="Digital Harmony" class="artwork-image">
+                <div class="artwork-title">Alpha</div>
+                <div class="artwork-description">A dark dragon perched on a rocky outcrop surrounded by glowing magical elements</div>
+                <div class="price">$50</div>
+            </td>
+            <td class="artwork-cell">
+                <img src="lion with wing.jpg" alt="Mountain Serenity" class="artwork-image">
+                <div class="artwork-title">Alpha</div>
+                <div class="artwork-description">A mythical lion with large feathered wings and a golden crown, set against a cosmic background with floating crystals.</div>
+                <div class="price">$50</div>
+            </td>
+        </tr>
+        
+        <!-- Third Row - Artworks -->
+        <tr>
+            <td class="artwork-cell">
+                <img src="camel  and  dessert.jpg" alt="Color Symphony" class="artwork-image">
+                <div class="artwork-title">Beta</div>
+                <div class="artwork-description">A mystical desert scene combining classical ruins with cosmic phenomena, where travelers and camels journey begin </div>
+                <div class="price">$100</div>
+            </td>
+            <td class="artwork-cell">
+                <img src="classic ape.jpg" alt="Geometric Flow" class="artwork-image">
+                <div class="artwork-title">Beta</div>
+                <div class="artwork-description">The Gentleman Ape distinguished chimpanzee in Victorian formal wear with top hat and coat</div>
+                <div class="price">$100</div>
+            </td>
+            <td class="artwork-cell">
+                <img src="city of dragon.jpg" alt="Neon Dreams" class="artwork-image">
+                <div class="artwork-title">Beta</div>
+                <div class="artwork-description">Majestic dragons soaring through a mountainous landscape with lakes and forests below</div>
+                <div class="price">$100</div>
+            </td>
+            <td class="artwork-cell">
+                <img src="the clown lion.jpg" alt="Forest Whispers" class="artwork-image">
+                <div class="artwork-title">Beta</div>
+                <div class="artwork-description">Rainbow Maned Lion :a majestic lion portrait featuring a vibrant, multicolored mane in rainbow hues </div>
+                <div class="price">$100</div>
+            </td>
+        </tr>
+        
+        <!-- Fourth Row - Artworks -->
+        <tr>
+            <td class="artwork-cell">
+                <img src="arabian night.jpg" alt="Ocean Depths" class="artwork-image">
+                <div class="artwork-title">Gamma</div>
+                <div class="artwork-description">A breathtaking nocturnal landscape where the Milky Way stretches across star-filled skies </div>
+                <div class="price">$200</div>
+            </td>
+            <td class="artwork-cell">
+                <img src="acc ape.jpg" alt="City Lights" class="artwork-image">
+                <div class="artwork-title">Gamma</div>
+                <div class="artwork-description">An urban portrait of a distinguished ape adorned in luxurious jewelry and headpiece</div>
+                <div class="price">$200</div>
+            </td>
+            <td class="artwork-cell">
+                <img src="grey dragon.jpg" alt="Pixel Paradise" class="artwork-image">
+                <div class="artwork-title">Gamma</div>
+                <div class="artwork-description">A fierce black dragon with glowing red eyes breathing fire in a dramatic pose</div>
+                <div class="price">$200</div>
+            </td>
+            <td class="artwork-cell">
+                <img src="pink blue lion.jpg" alt="Sunset Valley" class="artwork-image">
+                <div class="artwork-title">Gamma</div>
+                <div class="artwork-description"> A modern artistic interpretation of a lion rendered in colorful geometric patterns and angular, origami-like design elements.</div>
+                <div class="price">$200</div>
+            </td>
+        </tr>
+        
+        <!-- Fifth Row - Artworks -->
+        <tr>
+            <td class="artwork-cell">
+                <img src="sahara.jpg" alt="Marble Dreams" class="artwork-image">
+                <div class="artwork-title">Theta</div>
+                <div class="artwork-description"> A serene desert landscape with rolling sand dunes and rocky outcrops under a starlit sky with distant mountains.</div>
+                <div class="price">$500</div>
+            </td>
+            <td class="artwork-cell">
+                <img src="funny ape.jpg" alt="Fire Dance" class="artwork-image">
+                <div class="artwork-title">Theta</div>
+                <div class="artwork-description">Rainbow Punk Primate:a chimpanzee with vibrant rainbow mohawk hair in an urban nighttime setting</div>
+                <div class="price">$500</div>
+            </td>
+            <td class="artwork-cell">
+                <img src="colorful dragon.jpg" alt="Cyber Vision" class="artwork-image">
+                <div class="artwork-title">Theta</div>
+                <div class="artwork-description">Emerald Scales:a detailed fantasy dragon with teal and red coloring in a studio portrait style</div>
+                <div class="price">$500</div>
+            </td>
+            <td class="artwork-cell">
+                <img src="the golden lion.jpg" alt="Peaceful Lake" class="artwork-image">
+                <div class="artwork-title">Theta</div>
+                <div class="artwork-description">A golden lion with glowing markings standing proudly on a cliff against a dramatic sky with a crescent moon and mystical atmosphere.</div>
+                <div class="price">$500</div>
+            </td>
+        </tr>
+        
+        <!-- Sixth Row - Artworks -->
+        <tr>
+            <td class="artwork-cell">
+                <img src="moon light.jpg" alt="Storm Clouds" class="artwork-image">
+                <div class="artwork-title">Belta</div>
+                <div class="artwork-description">A nighttime desert scene with sand dunes under a spectacular starry sky featuring the Milky Way and a full moon.</div>
+                <div class="price">$1200</div>
+            </td>
+            <td class="artwork-cell">
+                <img src="climbing ape.jpg" alt="Rainbow Splash" class="artwork-image">
+                <div class="artwork-title">Belta</div>
+                <div class="artwork-description">Forest Climber:a young chimpanzee scaling a massive tree trunk in a misty forest setting</div>
+                <div class="price">$1200</div>
+            </td>
+            <td class="artwork-cell">
+                <img src="4dragon.jpg" alt="Matrix Code" class="artwork-image">
+                <div class="artwork-title">Belta</div>
+                <div class="artwork-description">A dynamic composition featuring four mythical dragons representing diffrent forces ice, fire, earth, and air .</div>
+                <div class="price">$1200</div>
+            </td>
+            <td class="artwork-cell">
+                <img src="the king lion.jpg" alt="Autumn Path" class="artwork-image">
+                <div class="artwork-title">Belta</div>
+                <div class="artwork-description">Noble Warrior Lion :a dignified lion wearing ornate medieval armor with intricate patterns and metalwork, depicted in profile</div>
+                <div class="price">$1200</div>
+
+            </td>
+        </tr>         
+    </table>
+</body>
+</html>
