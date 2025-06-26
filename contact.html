@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - ArtVerse</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <h1>Contact Us</h1>
+    </div>
+
+    <form class="contact-form" action="#" method="POST">
+      
+      <div class="form-row">
+        <div>
+          <label for="nom">Nom:</label>
+          <input type="text" id="nom" name="nom" required />
+        </div>
+        <div>
+          <label for="prenom">Prenom:</label>
+          <input type="text" id="prenom" name="prenom" required />
+        </div>
+      </div>
+
+      <div>
+        <label for="artiste">Artiste:</label>
+        <select id="artiste" name="artiste" required>
+          <option value="" disabled selected>Select an artist...</option>
+          <option value="Dragon">Dragon</option>
+          <option value="Lion">Lion</option>
+          <option value="Si Said">Si Said</option>
+          <option value="Ape">Ape</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Art:</label>
+        <div class="checkbox-group">
+          <!-- We hide the input and style the label for a cooler look -->
+          <input type="checkbox" id="artAlpha" name="art" value="Alpha" />
+          <label for="artAlpha">Alpha</label>
+          
+          <input type="checkbox" id="artBeta" name="art" value="Beta" />
+          <label for="artBeta">Beta</label>
+
+          <input type="checkbox" id="artTheta" name="art" value="Theta" />
+          <label for="artTheta">Theta</label>
+
+          <input type="checkbox" id="artGamma" name="art" value="Gamma" />
+          <label for="artGamma">Gamma</label>
+
+          <input type="checkbox" id="artSigma" name="art" value="Sigma" />
+          <label for="artSigma">Sigma</label>
+        </div>
+      </div>
+
+      <div>
+        <label>Price:</label>
+        <div class="radio-group">
+          <input type="radio" id="price50" name="price" value="50$" required />
+          <label for="price50">50$</label>
+
+          <input type="radio" id="price100" name="price" value="100$" />
+          <label for="price100">100$</label>
+
+          <input type="radio" id="price200" name="price" value="200$" />
+          <label for="price200">200$</label>
+
+          <input type="radio" id="price500" name="price" value="500$" />
+          <label for="price500">500$</label>
+
+          <input type="radio" id="price1200" name="price" value="1200$" />
+          <label for="price1200">1200$</label>
+        </div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <footer>
+      <p>© 2025 ArtVerse. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
