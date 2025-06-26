@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artist Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  <section class="hero">
+    <h1>Our Artists' Work</h1>
+  </section>
+
+  <table class="gallery-table">
+    <!-- First Row - Artists -->
+    <div class="artists-container">
+  <div class="artist">
+    <img src="si said.jpeg" alt="Si Said" height="120px" width="120px">
+    <h3>Si Said</h3>
+    <p>Desert Joy</p>
+  </div>
+  <div class="artist">
+    <img src="theape.jpeg" alt="The Ape" height="120px" width="120px">
+    <h3>The Ape</h3>
+    <p>Street Wisdom</p>
+  </div>
+  <div class="artist">
+    <img src="thedragon.jpeg" alt="The Dragon" height="120px" width="120px" >
+    <h3>The Dragon</h3>
+    <p>The Dragon's Gala</p>
+  </div>
+  <div class="artist">
+    <img src="thelion.jpeg" alt="The Lion" height="120px" width="120px">
+    <h3>The Lion</h3>
+    <p>Noble Beast</p>
+  </div>
+</div>
+     
+
+    <!-- Artwork Rows -->
+    <tr>
+      <td class="artwork-cell">
+        <img src="alphasi.jpeg" alt="Alpha" class="artwork-image">
+        <div class="artwork-title">Alpha</div>
+        <p>Ancient ruins and travelers beneath a cosmic starry sky in a vast desert</p>
+        <div class="price">$50</div>
+      </td>
+      <td class="artwork-cell">
+        <img src="alphamonkey.jpeg" alt="Alpha" class="artwork-image">
+        <div class="artwork-title">Alpha</div>
+        <p>A contemplative primate portrait in safari-style attire with botanical patterns</p>
+        <div class="price">$50</div>
+      </td>
+      <td class="artwork-cell">
+        <img src="alphadragon.jpeg" alt="Alpha" class="artwork-image">
+        <div class="artwork-title">Alpha</div>
+        <p>A dark dragon perched on a rocky outcrop surrounded by glowing magical elements</p>
+        <div class="price">$50</div>
+      </td>
+      <td class="artwork-cell">
+        <img src="alphalion.jpeg" alt="Alpha" class="artwork-image">
+        <div class="artwork-title">Alpha</div>
+        <p>A mythical lion with wings and a crown, set against a cosmic background</p>
+        <div class="price">$50</div>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="artwork-cell">
+        <img src="betasi.jpeg" alt="Beta" class="artwork-image">
+        <div class="artwork-title">Beta</div>
+        <p>A mystical desert scene with classical ruins and cosmic phenomena</p>
+        <div class="price">$100</div>
+      </td>
+      <td class="artwork-cell">
+        <img src="betamonkey.jpeg" alt="Beta" class="artwork-image">
+        <div class="artwork-title">Beta</div>
+        <p>The Gentleman Ape in Victorian formal wear with top hat and coat</p>
+        <div class="price">$100</div>
+      </td>
+      <td class="artwork-cell">
+        <img src="betadragon.jpeg" alt="Beta" class="artwork-image">
+        <div class="artwork-title">Beta</div>
+        <p>Dragons soaring over a mountainous landscape with lakes and forests</p>
+        <div class="price">$100</div>
+      </td>
+      <td class="artwork-cell">
+        <img src="betalion.jpeg" alt="Beta" class="artwork-image">
+        <div class="artwork-title">Beta</div>
+        <p>A lion portrait featuring a multicolored, vibrant rainbow mane</p>
+        <div class="price">$100</div>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="artwork-cell">
+        <img src="gammasi.jpeg" alt="Gamma" class="artwork-image">
+        <div class="artwork-title">Gamma</div>
+        <p>A star-filled Arabian night sky with the Milky Way stretching across</p>
+        <div class="price">$200</div>
+      </td>
+      <td class="artwork-cell">
+        <img src="gammamonkey.jpeg" alt="Gamma" class="artwork-image">
+        <div class="artwork-title">Gamma</div>
+        <p>An urban ape portrait adorned in luxurious jewelry and headpiece</p>
+        <div class="price">$200</div>
+      </td>
+      <td class="artwork-cell">
+        <img src="gammadragon.jpeg" alt="Gamma" class="artwork-image">
+        <div class="artwork-title">Gamma</div>
+        <p>A fierce black dragon with glowing red eyes breathing fire</p>
+        <div class="price">$200</div>
+      </td>
+      <td class="artwork-cell">
+        <img src="gammalion.jpeg" alt="Gamma" class="artwork-image">
+        <div class="artwork-title">Gamma</div>
+        <p>A lion in colorful geometric patterns and origami-like shapes</p>
+        <div class="price">$200</div>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="artwork-cell">
+        <img src="thetasi.jpeg" alt="Theta" class="artwork-image">
+        <div class="artwork-title">Theta</div>
+        <p>Peaceful sand dunes beneath a glowing starlit sky and distant peaks</p>
+        <div class="price">$500</div>
+      </td>
+      <td class="artwork-cell">
+        <img src="thetamonkey.jpeg" alt="Theta" class="artwork-image">
+        <div class="artwork-title">Theta</div>
+        <p>A chimp with a rainbow mohawk in an urban nighttime scene</p>
+        <div class="price">$500</div>
+      </td>
+      <td class="artwork-cell">
+        <img src="thetadragon.jpeg" alt="Theta" class="artwork-image">
+        <div class="artwork-title">Theta</div>
+        <p>A fantasy dragon with teal and red coloring in a studio pose</p>
+        <div class="price">$500</div>
+      </td>
+      <td class="artwork-cell">
+        <img src="thetalion.jpeg" alt="Theta" class="artwork-image">
+        <div class="artwork-title">Theta</div>
+        <p>A golden lion with mystical markings under a crescent moon</p>
+        <div class="price">$500</div>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="artwork-cell">
+        <img src="sigmasi.jpeg" alt="Belta" class="artwork-image">
+        <div class="artwork-title">Sigma</div>
+        <p>Night desert scene under Milky Way with full moon</p>
+        <div class="price">$1200</div>
+      </td>
+      <td class="artwork-cell">
+        <img src="sigmamonkey.jpeg" alt="Belta" class="artwork-image">
+        <div class="artwork-title">Sigma</div>
+        <p>A chimp scaling a massive tree in a misty forest</p>
+        <div class="price">$1200</div>
+      </td>
+      <td class="artwork-cell">
+        <img src="sigmadragon.jpeg" alt="Belta" class="artwork-image">
+        <div class="artwork-title">Sigma</div>
+        <p>Four dragons representing fire, water, air, and earth</p>
+        <div class="price">$1200</div>
+      </td>
+      <td class="artwork-cell">
+        <img src="sigmalion.jpeg" alt="Belta" class="artwork-image">
+        <div class="artwork-title">Sigma</div>
+        <p>A lion in ornate medieval armor, proud and strong</p>
+        <div class="price">$1200</div>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
+
